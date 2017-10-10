@@ -17,7 +17,7 @@ function rossler_equation_euler_and_rk4()
     
     figure;
     plot3(X1, Y1, Z1, X2, Y2, Z2);
-    legend("RK4", "Euler method", "location", "east");
+    legend('RK4', 'Euler method', 'location', 'east');
 end
 
 function [X, Y, Z] = euler_method(a, b, c, x0, y0, z0, dt, N)
