@@ -1,4 +1,4 @@
-function modified_and_runge()
+function rossler_equation_euler_and_rk4()
     a = 0.2
     b = 0.2
     c = 5.7
@@ -17,6 +17,7 @@ function modified_and_runge()
     
     figure;
     plot3(X1, Y1, Z1, X2, Y2, Z2);
+    legend("RK4", "Euler method", "location", "east");
 end
 
 function [X, Y, Z] = euler_method(a, b, c, x0, y0, z0, dt, N)
